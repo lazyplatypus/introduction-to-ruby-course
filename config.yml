@@ -1,0 +1,16 @@
+title: Introduction to Ruby
+description: Introduction to Ruby
+template:
+  repo: introduction-to-ruby-template
+  name: introduction-to-ruby
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
